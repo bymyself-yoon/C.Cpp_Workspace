@@ -9,7 +9,7 @@ stack full이므로 더 넣지 못합니다.
 stack empty - 프로그램을 종료합니다.
 
 
-₩₩₩
+```
 #include <iostream>
 using namespace std;
 template <class T> class MyStack {
@@ -34,4 +34,4 @@ int main() {
     cout << "맨 위에 있는 " << sc.pop() << " 꺼냄" << endl;
     sc.pop(); // stack empty~ 문장 나오기 위해 pop 한 번 더 삽입
 }
-₩₩₩
+```
