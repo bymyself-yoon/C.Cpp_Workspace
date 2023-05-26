@@ -69,3 +69,5 @@ int main() {
     cout << " d = " << d << ", e = " << e << ", f = " << f << endl << endl;
 }
 ```
+## 결과
+<img src = "/images/check_10-5_changethreenum.png" />
