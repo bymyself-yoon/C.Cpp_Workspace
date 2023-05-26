@@ -12,8 +12,8 @@ myswap(d,e,f); 를 호출한 후에는 a b c 가 2.2  3.3  1.1 로 바뀝니�
 ## 사용된 이론
 ### 템플릿
 - 함수나 클래스를 일반화 하는 C++ 도구
-- 선언: template<class T>
-ex)
+- 선언: template<class T>  
+ex)  
 ```C++
 void myswap(int & a, int & b) {
 	int tmp;
