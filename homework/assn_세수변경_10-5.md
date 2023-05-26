@@ -70,4 +70,4 @@ int main() {
 }
 ```
 ## 결과
-<img src = "images/10-5_changethreenum.png" />
+<img src = "/images/10-5_changethreenum.png" />
