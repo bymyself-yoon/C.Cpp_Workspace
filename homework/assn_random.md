@@ -12,31 +12,31 @@
   1학년 C언어에서 배우는 system 함수를 호출해도 되지만
   더 편하게 사용하시려면 OS 마다 별도로 제공하는 함수를 사용하셔도 됩니다.
 
-1초 딜레이 경우 Windows 경우 #include <windows.h> 한 후 1/1000초 단위의 Sleep(1000); 많이 사용
-리눅스/맥 경우 #include <unistd.h> 한 후 1초 단위 sleep(1); 혹은 1/1000000초 단위의 usleep(1000000); 많이 사용
-기타 본인이 선호하는 방법으로 시간 딜레이 구현
-샘플동영상은 0.05초 딜레이로 설정한 경우입니다. 
+1초 딜레이 경우 Windows 경우 #include <windows.h> 한 후 1/1000초 단위의 Sleep(1000); 많이 사용  
+리눅스/맥 경우 #include <unistd.h> 한 후 1초 단위 sleep(1); 혹은 1/1000000초 단위의 usleep(1000000); 많이 사용  
+기타 본인이 선호하는 방법으로 시간 딜레이 구현  
+샘플동영상은 0.05초 딜레이로 설정한 경우입니다.   
  
 
-- 커서 위치를 이동시키는 방법도 매우 다양하며 OS 마다 별도로 라이브러리를 제공하고 있습니다.
-  아시는 방법 중에서 자유롭게 사용하셔도 됩니다.
-  혹시 아직 커서이동을 안해보신 분들은 아래 예제를 참고하세요. (모든 OS에서 사용가능한 단순한 방법 예제입니다.)
-
-#include <iostream>
-using namespace std;
-void move_cur(int x, int y) {
-   printf("\033[%d;%dH", y, x);
-}
-int main() {
-  move_cur(30, 10); cout << "hello";
-  move_cur(10, 0); cout << "bye";
-  move_cur(50, 5); cout << "Dooli";
-  getchar();  /* 종료 메세지가 콘솔창에 뜨는 것을 잠시 막기 위한 getchar(); 입니다.
-                  엔터키를 누르시면 프로그램 종료 */
-  return 0;
-}
- 
-제출: 소스(txt파일), 결과동영상 
+- 커서 위치를 이동시키는 방법도 매우 다양하며 OS 마다 별도로 라이브러리를 제공하고 있습니다.  
+  아시는 방법 중에서 자유롭게 사용하셔도 됩니다.  
+  혹시 아직 커서이동을 안해보신 분들은 아래 예제를 참고하세요. (모든 OS에서 사용가능한 단순한 방법 예제입니다.)  
+  
+#include <iostream>  
+using namespace std;  
+void move_cur(int x, int y) {  
+   printf("\033[%d;%dH", y, x);  
+}  
+int main() {  
+  move_cur(30, 10); cout << "hello";  
+  move_cur(10, 0); cout << "bye";  
+  move_cur(50, 5); cout << "Dooli";  
+  getchar();  /* 종료 메세지가 콘솔창에 뜨는 것을 잠시 막기 위한 getchar(); 입니다.  
+                  엔터키를 누르시면 프로그램 종료 */  
+  return 0;  
+}   
+   
+제출: 소스(txt파일), 결과동영상   
 
 ## 코드
 ```C++
